@@ -6,7 +6,7 @@ on:
   schedule:
     - cron: '0 3,9,13 * * *' #时间已换算，实际为11，17，21点,但github action 采取排队运行机制，可能导致您的定时计划延后，建议自行根据实际运行情况选择调整或推荐使用终端脚本
 jobs:
-  mt-action:
+  mt-action:https://i.meituan.com/mttouch/page/account?userId=2518945281&token=AgHtIl3bm929W2Yh9ffFsg5onvMbJA-nf3EF2P8gSj6C0gzgs3heW4DaHPCPHYU0rB2ooXzDJEauNgAAAAByKwAAojEFqmAH9oY1MsPbhVXgLbeb-lur-Su0pBp2AcOylp7B4WCYzORRpG_3LzbODXd3
     name: my mt-action job
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
